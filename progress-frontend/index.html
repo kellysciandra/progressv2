@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- <link rel="stylesheet" type="text/css" href="styles/style.css"> -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <title>PROGRESS</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Progress</h1>
+            <div id="languages-container">
+                <ul id="languages-container">
+
+                </ul>
+            </div><br>
+            <div id="new-task-container">
+                <form id="new-task-form">
+                    <input type="text" name="task body" id="new-task-body" />
+                    <input type="submit" value="Save task" />
+                    <div class="dropdown">
+                        <button class="dropbtn">Please pick one</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </form><br>
+            </div>
+            <div id="tasks-container">
+                <ul id="tasks-container"></ul>
+
+            </div>
+        </div>
+
+        <!-- JS FILE Source-->
+        <script src="src/task.js"></script>
+        <script src="src/tasks.js"></script>
+        <script src="src/language.js"></script>
+        <script src="src/languages.js"></script>
+        <script src="adapters/LanguagesAdapter.js"></script>
+        <script src="adapters/TasksAdapter.js"></script>
+        <script src="src/app.js"></script>
+        <!-- <script src="src/user.js"></script> -->
+        <script src="src/index.js"></script>
+    </body>
+
+</html>
